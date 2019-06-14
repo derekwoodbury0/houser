@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* .home-container {
+    background: #dedede;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+} */
+
+.delete-button {
+    background: none;
+    font-size: 100%;
+    float: right;
+}

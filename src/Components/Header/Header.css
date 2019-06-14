@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 8vh;
+    width: 100vw;
+    background: #519872;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.title {
+    margin-right: 35vw;
+}
