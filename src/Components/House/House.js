@@ -18,12 +18,12 @@ export default class Header extends Component {
                         <h3>Zipcode: {house.zip}</h3>
                     </div>
                     <div>
-                        <h3>Monthly Mortgage: ${house.mortgage}</h3>
-                        <h3>Desired Rent: ${house.rent}</h3>
                         <button 
                             className="delete-button"
                             onClick={() => this.props.deleteHouse(house.id)}
-                        >X</button>
+                            >X</button>
+                        <h3>Monthly Mortgage: ${house.mortgage}</h3>
+                        <h3>Desired Rent: ${house.rent}</h3>
                     </div>
                 </div>
             </div>

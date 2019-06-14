@@ -64,7 +64,7 @@ export default class StepOne extends Component {
                         value={this.state.zip}
                     />
                     <Link to="/wizard/step2">
-                        <button onClick={this.handleClick}>Next Step</button>
+                        <button className="next-button" onClick={this.handleClick}>Next Step</button>
                     </Link>
                 </div>
             </div>

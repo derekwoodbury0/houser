@@ -9,4 +9,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.next-button {
+    background: #3b5249;
+    font-size: 1.3vw;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+    right: 10%
 }

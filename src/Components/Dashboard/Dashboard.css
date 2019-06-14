@@ -33,4 +33,5 @@
     display: flex;
     overflow-y: auto;
     width: 95%;
+    justify-content: center;
 }

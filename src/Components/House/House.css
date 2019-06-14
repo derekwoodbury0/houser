@@ -9,10 +9,18 @@
     display: flex;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 12px;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .delete-button {
     background: none;
-    font-size: 100%;
-    float: right;
+    font-size: 150%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: none;
 }
