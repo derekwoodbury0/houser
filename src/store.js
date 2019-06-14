@@ -18,6 +18,7 @@ export const CANCEL_VALUES = 'CANCEL_VALUES'
 export const ADD_HOUSE = 'ADD_HOUSE'
 
 function reducer(state = initialState, action) {
+
     switch(action.type) {
         case STEP_ONE_VALUES:
             return {
@@ -34,17 +35,6 @@ function reducer(state = initialState, action) {
             return {...state, mortgage: action.payload.mortgage, rent: action.payload.rent}
         case CANCEL_VALUES:
             return {...initialState}
-        // case ADD_HOUSE:
-            // let { name, address, city, state, zip, imageUrl } = state
-        //     let newHouse = {
-        //         name: state.name,
-        //         address: state.address,
-        //         city: state.city,
-        //         state: state.state,
-        //         zip: state.zip,
-        //         imageUrl: state.imageUrl
-        //      }
-        //     return { ...state, newHouse}
         default:
             return state
     }

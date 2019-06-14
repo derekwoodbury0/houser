@@ -5,6 +5,7 @@ import store, { CANCEL_VALUES } from '../../store'
 import StepOne from '../StepOne/StepOne'
 import StepTwo from '../StepTwo/StepTwo'
 import StepThree from '../StepThree/StepThree'
+import './Wizard.css'
 
 export default class Wizard extends Component {
     constructor(props) {
@@ -35,12 +36,14 @@ export default class Wizard extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <h1>Add New Listing</h1>
-                    <Link to="/">
-                        <button onClick={this.cancelHouse}>Cancel</button>
-                    </Link>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <div className="wizard">
+                    <div className="subheader">
+                        <h1>Add New Listing</h1>
+                        <Link to="/">
+                            <button onClick={this.cancelHouse} className="cancel-button">Cancel</button>
+                        </Link>
+                    </div>
                     <Route path="/wizard/step1" component={StepOne}/>
                     <Route path="/wizard/step2" component={StepTwo}/>
                     <Route path="/wizard/step3" component={StepThree}/>

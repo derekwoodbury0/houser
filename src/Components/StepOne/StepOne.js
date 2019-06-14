@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import store, { STEP_ONE_VALUES } from '../../store'
 import { Link } from 'react-router-dom'
+import './StepOne.css'
 
 export default class StepOne extends Component {
     constructor(props) {
@@ -28,20 +29,22 @@ export default class StepOne extends Component {
 
     render() {
         return(
-            <div>
-                <div>
-                    <h2>Property Name</h2>
-                    <input
-                        onChange={this.handleChange}
-                        name="name"
-                        value={this.state.name}
-                    />
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <div className="step-one">
+                    <div>
+                        <h2>Property Name</h2>
+                        <input
+                            onChange={this.handleChange}
+                            name="name"
+                            value={this.state.name}
+                        />
+                    </div>
                     <h2>Address</h2>
                     <input
                         onChange={this.handleChange}
                         name="address"
                         value={this.state.address}
-                    />
+                        />
                     <h2>City</h2>
                     <input
                         onChange={this.handleChange}

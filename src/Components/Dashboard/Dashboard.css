@@ -6,8 +6,8 @@
 
 .dashboard {
     height: 92vh;
-    width: 50vw;
-    /* background: #E5F4EC; */
+    width: 60vw;
+    background: #E5F4EC;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +21,7 @@
     width: 100%;
     font-size: 1.5vw;
     padding: 2%;
-    /* border-bottom: black 1px solid; */
+    border-bottom: black 1px solid;
 }
 
 .dashboard-header-button {

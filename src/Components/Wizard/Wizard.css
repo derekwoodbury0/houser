@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wizard {
+    height: 92vh;
+    width: 50vw;
+    background: #E5F4EC;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.cancel-button {
+    background: #fec2c2;
+    font-size: 1.3vw;
+}
